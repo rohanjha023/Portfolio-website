@@ -5,16 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  border: none;
+  border:none;
   outline: none;
   scroll-behavior: smooth;
   font-family: "Nunito Sans", sans-serif;
 }
 
 :root {
-  --bg-color: #008080;
-  --snd-bf-color: #0f7878;
-  --main-color: #ace63f;
+  --bg-color: #55cede;
+  --snd-bf-color: #26a4c7;
+  --main-color: #83813e;
   --text-color: #080302dd;
 }
 
@@ -39,7 +39,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background: rgb(85, 210, 197);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,8 +76,6 @@ section {
   align-items: center;
 }
 
-.navbar a[href="#home"] {
-}
 
 .home-content {
   font-size: 3.2rem;
@@ -139,7 +137,7 @@ span {
 
 .social-media a:hover {
   background-color: var(--main-color);
-  color: var(--snd-bf-color);
+  color: aqua;
   box-shadow: 0 0 1rem var(--text-color);
 }
 
@@ -150,7 +148,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--bg-color);
+  color: aqua;
   letter-spacing: 0.1rem;
   font-weight: 700;
   transition: 0.5s ease;
@@ -280,14 +278,16 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--bg-color));
   display: flex;
   justify-content: center;
+  align-items: center;   
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.4s ease;
+
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -296,7 +296,7 @@ span {
 
 .portfolio-layer h4 {
   font-size: 3rem;
-  color: var(--main-color);
+  color:white;
 }
 
 .portfolio-layer p {
@@ -313,6 +313,7 @@ span {
   height: 5rem;
   background: var(--main-color);
   border-radius: 50%;
+  
 }
 
 .portfolio-layer a i {
@@ -342,7 +343,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   background: var(--text-color);
-  color: var(--main-color);
+  color:white;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -454,3 +455,4 @@ span {
     width: 50%;
   }
 }
+
